@@ -15,3 +15,17 @@ p.venue {
 .slide h2 + figure.cover.height.margin > :first-child {
   height: 66%;
 }
+
+.slide h2.shout {
+  font-size: 3.2em;
+  line-height: 1.2;
+}
+
+.text.slide p {
+  font-size: 1.5em;
+  line-height: 1.8;
+  letter-spacing: -.5px;
+  font-weight: bold;
+  margin: 2em 0;
+  color: #453688;
+}
