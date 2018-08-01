@@ -78,6 +78,20 @@
     </figure>
   </div>
 
+  <div class="slide" id="like">
+    <h2>
+      Every piece of data can link<br>
+      to any other piece of data.
+    </h2>
+    <pre><code><span class="prefix">PREFIX as: &lt;https://www.w3.org/ns/activitystreams#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
+
+&lt;#ruben-likes-dwebsummit&gt; a as:Like;
+  as:actor  &lt;https://ruben.verborgh.org/profile/#me&gt;;
+  as:object &lt;https://decentralizedweb.net/#2018&gt;;
+  as:published "2018-08-02T22:00:00Z"^^xsd:dateTime.</code></pre>
+  </div>
+
   <div class="slide" id="views">
     <h2>
       You can grant apps and people access<br>

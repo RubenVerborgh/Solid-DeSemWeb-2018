@@ -29,3 +29,7 @@ p.venue {
   margin: 2em 0;
   color: #453688;
 }
+
+.prefix {
+  opacity: .5;
+}
