@@ -33,3 +33,10 @@ p.venue {
 .prefix {
   opacity: .5;
 }
+
+#architecture img {
+  top: 67%;
+  left: 67%;
+  height: 134%;
+  max-height: none;
+}
