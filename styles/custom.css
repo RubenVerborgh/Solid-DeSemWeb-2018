@@ -21,6 +21,10 @@ p.venue {
   line-height: 1.2;
 }
 
+.slide.toc h2 {
+  display: none;
+}
+
 .text.slide p {
   font-size: 1.5em;
   line-height: 1.5;
