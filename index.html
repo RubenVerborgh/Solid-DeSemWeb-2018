@@ -27,10 +27,6 @@
     <p class="author">Ruben Verborgh</p>
   </div>
 
-  <div class="slide" id="decentralization">
-    <h2 class="shout">Decentralization means choice.</h2>
-  </div>
-
   <div class="text slide" id="intro">
     <p>
       The Solid ecosystem enables you
@@ -48,8 +44,8 @@
     <h2>Solid: Linked Data for personal data management</h2>
     <ul>
       <li><a href="#toc-solid">The Solid ecosystem</a></li>
-      <li><a href="#toc-timeline">Past, present, and future</a></li>
-      <li><a href="#toc-demo">Live demo</a></li>
+      <li><a href="#toc-linkeddata">The role of Linked Data</a></li>
+      <li><a href="#toc-devx">The developer experience</a></li>
     </ul>
   </div>
 
@@ -57,19 +53,9 @@
     <h2>Solid: Linked Data for personal data management</h2>
     <ul>
       <li class="current"><a href="#toc-solid">The Solid ecosystem</a></li>
-      <li><a href="#toc-timeline">Past, present, and future</a></li>
-      <li><a href="#toc-demo">Live demo</a></li>
+      <li><a href="#toc-linkeddata">The role of Linked Data</a></li>
+      <li><a href="#toc-devx">The developer experience</a></li>
     </ul>
-  </div>
-
-  <div class="slide" id="axis">
-    <h2>
-      Different platforms tackle decentralization<br>
-      at very different scales.
-    </h2>
-    <figure class="cover width margin">
-      <img src="images/decentralization-axis.svg" alt="">
-    </figure>
   </div>
 
   <div class="slide" id="decentralized-data">
@@ -80,20 +66,6 @@
     <figure class="cover height margin">
       <img src="images/decentralized-data.svg" alt="">
     </figure>
-  </div>
-
-  <div class="slide" id="like">
-    <h2>
-      Every piece of data can link<br>
-      to any other piece of data.
-    </h2>
-    <pre><code><span class="prefix">PREFIX as: &lt;https://www.w3.org/ns/activitystreams#&gt;
-PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
-
-&lt;#ruben-likes-dwebsummit&gt; a as:Like;
-  as:actor  <mark>&lt;https://ruben.verborgh.org/profile/#me&gt;</mark>;
-  as:object <mark>&lt;https://decentralizedweb.net/#2018&gt;</mark>;
-  as:published "2018-08-02T22:00:00Z"^^xsd:dateTime.</code></pre>
   </div>
 
   <div class="slide" id="views">
@@ -151,26 +123,17 @@ PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
         standards
         <ul class="inline next">
           <li>HTTP</li>
-          <li>Linked Data</li>
-          <li>WebID</li>
-          <li>Web Access Control</li>
-          <li>OpenID Connect</li>
+          <li>URL</li>
+          <li>RDF</li>
+          <li>LDP</li>
+          <li>LDN</li>
           <li>…</li>
         </ul>
       </li>
     </ul>
   </div>
 
-  <div class="toc slide" id="toc-timeline">
-    <h2>Solid: Linked Data for personal data management</h2>
-    <ul>
-      <li><a href="#toc-solid">The Solid ecosystem</a></li>
-      <li class="current"><a href="#toc-timeline">Past, present, and future</a></li>
-      <li><a href="#toc-demo">Live demo</a></li>
-    </ul>
-  </div>
-
-  <div class="slide" id="past">
+  <div class="slide" id="current-state">
     <h2>
       The Solid server and several apps exist<br>
       and are usable for developers.
@@ -209,64 +172,49 @@ PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
     </ul>
   </div>
 
-  <div class="slide" id="present">
+  <div class="slide" id="inrupt">
     <h2>
-      Solid is transitioning from research project<br>
-      into an ecosystem backed by a start-up.
+      The Solid ecosystem is backed by Inrupt,<br>
+      which aims to accelerate development.
     </h2>
     <ul>
-      <li>
-        MIT has been our home
-        <ul>
-          <li>initial development of server and apps</li>
-        </ul>
-      </li>
-      <li class="next">
-        Inrupt is accelerating development
-        <ul>
-          <li class="next">open up the ecosystem for all</li>
-          <li class="next">maintain common building blocks as open source</li>
-          <li class="next">create tooling for developers</li>
-          <li class="next">offer services and apps</li>
-        </ul>
-      </li>
+      <li class="next">open up the ecosystem for all</li>
+      <li class="next">maintain common building blocks as open source</li>
+      <li class="next">create tooling for developers</li>
+      <li class="next">offer services and apps</li>
     </ul>
   </div>
 
-  <div class="slide" id="future">
+  <div class="toc slide" id="toc-timeline">
+    <h2>Solid: Linked Data for personal data management</h2>
+    <ul>
+      <li><a href="#toc-solid">The Solid ecosystem</a></li>
+      <li class="current"><a href="#toc-linkeddata">The role of Linked Data</a></li>
+      <li><a href="#toc-devx">The developer experience</a></li>
+    </ul>
+  </div>
+
+  <div class="slide" id="like">
     <h2>
-      We will bring the Solid experience<br>
-      to people all over the world.
+      Every piece of data can link<br>
+      to any other piece of data.
     </h2>
-    <dl>
-      <dt>September 2018</dt>
-      <dd class="next">more about Inrupt</dd>
-      <dt>early Fall 2018</dt>
-      <dd class="next">developer toolkit &amp; common UX</dd>
-      <dt>early 2019</dt>
-      <dd class="next">MVP of the ecosystem</dd>
-    </dl>
+    <pre><code><span class="prefix">PREFIX as: &lt;https://www.w3.org/ns/activitystreams#&gt;
+PREFIX xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;</span>
+
+&lt;#ruben-likes-iswc2018&gt; a as:Like;
+  as:actor  <mark>&lt;https://ruben.verborgh.org/profile/#me&gt;</mark>;
+  as:object <mark>&lt;http://iswc2018.semanticweb.org/#this&gt;</mark>;
+  as:published "2018-10-08T21:00:00Z"^^xsd:dateTime.</code></pre>
   </div>
 
   <div class="toc slide" id="toc-demo">
     <h2>Solid: Linked Data for personal data management</h2>
     <ul>
       <li><a href="#toc-solid">The Solid ecosystem</a></li>
-      <li><a href="#toc-timeline">Past, present, and future</a></li>
-      <li class="current"><a href="#toc-demo">Live demo</a></li>
+      <li><a href="#toc-linkeddata">The role of Linked Data</a></li>
+      <li class="current"><a href="#toc-devx">The developer experience</a></li>
     </ul>
-  </div>
-
-  <div class="slide" id="architecture">
-    <figure class="cover height">
-      <img src="https://www.w3.org/DesignIssues/diagrams/solid/solid-architecture.svg" alt="[the Solid architecture]">
-    </figure>
-  </div>
-
-  <div class="slide" id="roadmap">
-    <figure class="cover height">
-      <img src="https://www.w3.org/DesignIssues/diagrams/solid/2018-soild-work.svg" alt="[the Solid roadmap]">
-    </figure>
   </div>
 
   <footer>
