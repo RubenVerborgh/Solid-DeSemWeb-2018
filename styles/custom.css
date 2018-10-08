@@ -44,3 +44,9 @@ p.venue {
   height: 134%;
   max-height: none;
 }
+
+#end h2 {
+  text-align: center;
+  margin: 3em 0;
+  font-size: 2em;
+}
